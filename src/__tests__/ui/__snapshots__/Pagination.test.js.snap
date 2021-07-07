@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<nav
+  className="Pagination"
+>
+  <div
+    className="Pagination-previous"
+    key="previous-div"
+  >
+    <Button
+      className=""
+      color="default"
+      onClick={[Function]}
+      size="medium"
+      theme="outline"
+      title="Previous"
+    />
+  </div>
+  <div
+    className="Pagination-next"
+    key="next-div"
+  >
+    <Button
+      className=""
+      color="default"
+      onClick={[Function]}
+      size="medium"
+      theme="outline"
+      title="Next"
+    />
+  </div>
+  <ul
+    className="Pagination-pages flex-center"
+  >
+    <PageButton
+      className=""
+      key="0"
+      onClick={[Function]}
+      page={0}
+      shift={1}
+    />
+    <PageButton
+      className="current"
+      key="1"
+      onClick={[Function]}
+      page={1}
+      shift={1}
+    />
+    <PageButton
+      className=""
+      key="2"
+      onClick={[Function]}
+      page={2}
+      shift={1}
+    />
+    <PageButton
+      className=""
+      key="3"
+      onClick={[Function]}
+      page={3}
+      shift={1}
+    />
+    <li
+      key="last"
+    >
+      <span
+        className="Pagination-ellipsis"
+      >
+        …
+      </span>
+    </li>
+    <PageButton
+      key="9"
+      onClick={[Function]}
+      page={9}
+      shift={1}
+    />
+  </ul>
+</nav>
+`;
+
+exports[`matches test renderer snapshot serializes the styles 1`] = `
+<nav
+  className="Pagination"
+>
+  <div
+    className="Pagination-previous"
+  >
+    <span
+      className="StyledButton-aqwbwz-0 eZYUp Button"
+      color="var(--text-color)"
+      onClick={[Function]}
+      size="medium"
+    >
+      <span>
+        Previous
+      </span>
+    </span>
+  </div>
+  <div
+    className="Pagination-next"
+  >
+    <span
+      className="StyledButton-aqwbwz-0 eZYUp Button"
+      color="var(--text-color)"
+      onClick={[Function]}
+      size="medium"
+    >
+      <span>
+        Next
+      </span>
+    </span>
+  </div>
+  <ul
+    className="Pagination-pages flex-center"
+  >
+    <li>
+      <span
+        className="StyledButton-aqwbwz-0 eZYUp Button Pagination-page-button "
+        color="var(--text-color)"
+        onClick={[Function]}
+        size="medium"
+      >
+        <span>
+          1
+        </span>
+      </span>
+    </li>
+    <li>
+      <span
+        className="StyledButton-aqwbwz-0 eZYUp Button Pagination-page-button current"
+        color="var(--text-color)"
+        onClick={[Function]}
+        size="medium"
+      >
+        <span>
+          2
+        </span>
+      </span>
+    </li>
+    <li>
+      <span
+        className="StyledButton-aqwbwz-0 eZYUp Button Pagination-page-button "
+        color="var(--text-color)"
+        onClick={[Function]}
+        size="medium"
+      >
+        <span>
+          3
+        </span>
+      </span>
+    </li>
+    <li>
+      <span
+        className="StyledButton-aqwbwz-0 eZYUp Button Pagination-page-button "
+        color="var(--text-color)"
+        onClick={[Function]}
+        size="medium"
+      >
+        <span>
+          4
+        </span>
+      </span>
+    </li>
+    <li>
+      <span
+        className="Pagination-ellipsis"
+      >
+        …
+      </span>
+    </li>
+    <li>
+      <span
+        className="StyledButton-aqwbwz-0 eZYUp Button Pagination-page-button "
+        color="var(--text-color)"
+        onClick={[Function]}
+        size="medium"
+      >
+        <span>
+          10
+        </span>
+      </span>
+    </li>
+  </ul>
+</nav>
+`;

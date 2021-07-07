@@ -1,0 +1,34 @@
+.QueryRunButton {
+    .run-selection {
+        line-height: 24px;
+    }
+
+    & .QueryEngineSelector .engine-selector-button {
+        border-left: none;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+}
+
+.QueryEngineSelector {
+    display: inline-block;
+
+    .engine-selector-button {
+        padding: 5.5px 8px;
+        border: var(--border);
+        border-radius: var(--border-radius);
+
+        user-select: none;
+
+        font-weight: bold;
+        color: var(--dark-text-color);
+        font-size: var(--small-text-size);
+        .fa {
+            margin-left: 5px;
+        }
+    }
+
+    &.readonly {
+        line-height: 36px;
+    }
+}

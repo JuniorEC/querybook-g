@@ -1,0 +1,89 @@
+cell_types:
+    text:
+        key: 'text'
+        name: 'Text'
+        icon: 'font'
+        meta:
+            collapsed: false
+        meta_default:
+            collapsed: false
+    query:
+        key: 'query'
+        name: 'Query'
+        icon: 'code'
+        meta:
+            title: '' # can be any string
+            engine: 0 # Engine Id
+            collapsed: false
+            query_collapsed: false
+        meta_default:
+            title: ''
+            engine: null
+            collapsed: false
+            query_collapsed: false
+    chart:
+        key: 'chart'
+        name: 'Chart'
+        icon: 'chart-line'
+        meta:
+            title: ''
+            data:
+                source_type: ''
+                source_ids: [0]
+                transformations:
+                    format:
+                        agg_col: 0
+                        series_col: 1
+                        value_cols: [2]
+                    aggregate: false
+                    switch: false
+            chart:
+                type: ''
+                x_axis:
+                    col_idx: 0
+                    label: ''
+                    scale: ''
+                    min: 0
+                    max: 0
+                    sort:
+                        idx: 0
+                        asc: true
+                y_axis:
+                    label: ''
+                    scale: ''
+                    min: 0
+                    max: 0
+                    stack: false
+                    series:
+                        0:
+                            source: 0
+                            hidden: false
+                            color: 0
+                            agg_type: 'sum'
+                z_axis:
+                    col_idx: 2
+            visual:
+                legend_position: ''
+                legend_display: true
+                connect_missing: false
+                values:
+                    display: 0
+                    position: 'center'
+                    alignment: 'center'
+            collapsed: false
+        meta_default:
+            title: ''
+            data:
+                source_type: 'cell_above'
+                transformations:
+                    format: {}
+            chart:
+                type: 'line'
+                x_axis:
+                    col_idx: 0
+                    label: ''
+                y_axis:
+                    label: ''
+                    series: {}
+            visual: {}
+            collapsed: false

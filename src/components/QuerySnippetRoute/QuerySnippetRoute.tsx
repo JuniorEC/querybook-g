@@ -1,0 +1,26 @@
+import React from 'react';
+import { RouteComponentProps } from 'react-router-dom';
+import history from 'lib/router-history';
+
+import { useModalRoute } from 'hooks/useModalRoute';
+import { Modal } from 'ui/Modal/Modal';
+import { QuerySnippetWrapper } from './QuerySnippetWrapper';
+
+const QuerySnippetRoute: React.FunctionComponent<RouteComponentProps> = ({
+    location,
+    match,
+}) => {
+    // @ts-ignore
+    const isModal = useModalRoute(location);
+    const contentDOM = <QuerySnippetWrapper id={match.params['id']} />;
+
+    return isModal ? (
+        <Modal type="standard" onHide={history.goBack}>
+            {contentDOM}
+        </Modal>
+    ) : (
+        contentDOM
+    );
+};
+
+export default QuerySnippetRoute;
